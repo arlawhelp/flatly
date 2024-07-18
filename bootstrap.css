@@ -6,7 +6,7 @@ details > summary::-webkit-details-marker {
 /* Custom marker */
 details > summary::before {
   content: "▶";
-  color: lightblue;
+  color: coral;
   display: inline-block;
   width: 1em;
   margin-right: 0.5em;
