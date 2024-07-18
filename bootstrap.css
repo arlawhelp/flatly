@@ -38,7 +38,7 @@ details > summary::before {
 
 /* Rotate arrow icon when details are open */
 details[open] > summary::before {
-  transform: rotate(180deg) translate(-20%, 20%); /* Pointing down when open */
+  transform: rotate(135deg) translate(-20%, 20%); /* Pointing down when open */
 }
 
 /* Style for the hidden content inside details */
