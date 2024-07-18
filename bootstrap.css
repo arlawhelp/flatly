@@ -16,7 +16,7 @@ details > summary {
   align-items: center;
 }
 
-/* Open state of the details summary */
+Open state of the details summary */
 /*details[open] > summary {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -51,18 +51,18 @@ details > div {
 }
 
 /* Show hidden content when details is open */
-/*details[open] > div {
+details[open] > div {
   display: block;
 }
 
-/* Layout settings for the accordion section */
+Layout settings for the accordion section */
 /*section.accordion {
   max-width: 120px;
   width: 100%;
   padding: 10px;
 }
 
-/* Remove padding from details element */
+Remove padding from details element */
 /*details {
   padding: 0;
 }
