@@ -23,7 +23,7 @@ details[open] > summary {
 }
 
 /* Arrow icon before summary text */
-/*details > summary::before {
+details > summary::before {
   content: "";
   display: inline-block;
   width: 0.2rem;
@@ -37,7 +37,7 @@ details[open] > summary {
 }
 
 /* Rotate arrow icon when details are open */
-/*details[open] > summary::before {
+details[open] > summary::before {
   transform: rotate(135deg) translate(-20%, 20%); /* Pointing down when open */
 }
 
