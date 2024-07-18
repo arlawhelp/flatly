@@ -7,7 +7,7 @@ details > summary::-webkit-details-marker {
 details > summary {
   list-style: none;
   border: solid 1px teal;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 details[open] > summary {
   border-bottom-left-radius: 0;
@@ -19,14 +19,14 @@ details[open] > :not(summary) {
 }
 details[open] > :last-child {
   border-bottom: solid 1px teal;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
 }
 details > summary::before {
   content: "";
   display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.2rem;
+  height: 0.2rem;
   border: solid 2px black;
   border-left-color: transparent;
   border-bottom-color: transparent;
