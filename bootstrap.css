@@ -54,12 +54,12 @@ details > summary::before {
   border-top-color: transparent;
   margin-right: 0.6rem;
   transition: transform 0.2s;
-  transform: rotate(45deg) translate(-20%, 20%); /* Default pointing right */
+  transform: rotate(-45deg) translate(-20%, 20%); /* Default pointing right */
 }
 
 /* Rotate arrow icon when details are open */
 details[open] > summary::before {
-  transform: rotate(225deg) translate(-20%, 20%); /* Pointing down when open */
+  transform: rotate(90deg) translate(-20%, 20%); /* Pointing down when open */
 }
 
 /* Layout settings for the accordion section */
