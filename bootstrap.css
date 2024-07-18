@@ -6,7 +6,7 @@ details > summary::-webkit-details-marker {
 /* Custom marker */
 details > summary::before {
   content: "▶";
-  color: coral;
+  color: lightblue;
   display: inline-block;
   width: 1em;
   margin-right: 0.5em;
@@ -34,6 +34,22 @@ details > div {
 details[open] > div {
   display: block;
 }
+
+/* Style for summary to center the text vertically */
+details > summary {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Layout settings for the accordion section */
+section.accordion {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+}
+
 
 .tooltip {
     position: relative;
