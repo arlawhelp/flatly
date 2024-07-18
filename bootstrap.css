@@ -57,7 +57,7 @@ details[open] > div {
 
 /* Layout settings for the accordion section */
 section.accordion {
-  max-width: 400px;
+  max-width: 120px;
   width: 100%;
   padding: 10px;
 }
@@ -70,6 +70,6 @@ details {
 /* Full width and padding for child elements */
 details > * {
   width: 100%;
-  margin: 0;
+  margin: 20;
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
