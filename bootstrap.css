@@ -56,7 +56,7 @@ details > div {
 }
 
 /* Layout settings for the accordion section */
-section.accordion {
+/*section.accordion {
   max-width: 120px;
   width: 100%;
   padding: 10px;
