@@ -16,8 +16,8 @@ details > summary {
   align-items: center;
 }
 
-Open state of the details summary */
-/*details[open] > summary {
+/*Open state of the details summary */
+details[open] > summary {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
