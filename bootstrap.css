@@ -19,22 +19,21 @@ details[open] > summary::before {
   transform: rotate(90deg);
 }
 
-
 /* Style for the hidden content inside details */
 details > div {
   border: solid 2px lightblue;
   border-radius: 0.2rem;
-  padding: 0 20px; /* Remove padding above and below, add padding left and right */
+  padding: 0 10px; /* Remove padding above and below, add padding left and right */
   display: none;
-  margin-top: 10px; 
-  margin-left: 20px;/* Add a bit of margin to separate from the summary */
-    background-color: #e0f7ff; /* Lighter version of lightblue for background fill */
-
+  margin-top: 10px;
+  margin-left: 20px; /* Add a bit of margin to separate from the summary */
+  background-color: #e0f7ff; /* Lighter version of lightblue for background fill */
 }
 
 /* Show hidden content when details is open */
 details[open] > div {
   display: block;
 }
+
 
 
