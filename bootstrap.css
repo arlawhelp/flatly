@@ -1,54 +1,40 @@
-details > summary:focus {
-  outline: none;
-}
+/* Remove default marker for details */
 details > summary::-webkit-details-marker {
   display: none;
 }
-details > summary {
-  list-style: none;
-  border: solid 1px teal;
-  border-radius: 0.2rem;
-}
-details[open] > summary {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-details[open] > :not(summary) {
-  border-left: solid 1px teal;
-  border-right: solid 1px teal;
-}
-details[open] > :last-child {
-  border-bottom: solid 1px teal;
-  border-bottom-left-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
-}
+
+/* Custom marker */
 details > summary::before {
-  content: "";
+  content: "▶";
+  color: lightblue;
   display: inline-block;
-  width: 0.2rem;
-  height: 0.2rem;
-  border: solid 2px black;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  margin-right: 0.6rem;
+  width: 1em;
+  margin-right: 0.5em;
+  transform: rotate(0deg);
   transition: transform 0.2s;
-  transform: rotate(-45deg) translate(-20%, 20%);
-}
-details[open] > summary::before {
-  transform: rotate(135deg) translate(-20%, 20%);
 }
 
-/* layout */
-section.accordion {
-  max-width: 400px;
-  width: 100%;
-  padding: 10px; 
+/* Rotate custom marker when details is open */
+details[open] > summary::before {
+  transform: rotate(90deg);
 }
-details {
-  padding: 10px;
+
+
+/* Style for the hidden content inside details */
+details > div {
+  border: solid 2px lightblue;
+  border-radius: 0.2rem;
+  padding: 0 20px; /* Remove padding above and below, add padding left and right */
+  display: none;
+  margin-top: 10px; 
+  margin-left: 20px;/* Add a bit of margin to separate from the summary */
+    background-color: #e0f7ff; /* Lighter version of lightblue for background fill */
+
 }
-details > * {
-  width: 100%;
-  padding: 10px;
-  margin: 0px;
+
+/* Show hidden content when details is open */
+details[open] > div {
+  display: block;
 }
+
+
