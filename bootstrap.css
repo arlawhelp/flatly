@@ -1,10 +1,10 @@
 /* Remove outline when summary is focused */
-details > summary:focus {
+/*details > summary:focus {
   outline: none;
 }
 
 /* Remove default marker for details */
-details > summary::-webkit-details-marker {
+/*details > summary::-webkit-details-marker {
   display: none;
 }
 
@@ -17,13 +17,13 @@ details > summary {
 }
 
 /* Open state of the details summary */
-details[open] > summary {
+/*details[open] > summary {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 /* Arrow icon before summary text */
-details > summary::before {
+/*details > summary::before {
   content: "";
   display: inline-block;
   width: 0.2rem;
@@ -37,7 +37,7 @@ details > summary::before {
 }
 
 /* Rotate arrow icon when details are open */
-details[open] > summary::before {
+/*details[open] > summary::before {
   transform: rotate(135deg) translate(-20%, 20%); /* Pointing down when open */
 }
 
@@ -51,7 +51,7 @@ details > div {
 }
 
 /* Show hidden content when details is open */
-details[open] > div {
+/*details[open] > div {
   display: block;
 }
 
@@ -63,7 +63,7 @@ section.accordion {
 }
 
 /* Remove padding from details element */
-details {
+/*details {
   padding: 0;
 }
 
