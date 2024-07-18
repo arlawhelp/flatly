@@ -14,6 +14,8 @@ details > summary {
   cursor: pointer;
   display: flex;
   align-items: center;
+  padding: 10px;
+  position: relative;
 }
 
 /* Open state of the details summary */
@@ -24,17 +26,9 @@ details[open] > summary {
 
 /* Style for content inside open details */
 details[open] > :not(summary) {
-  border: solid 1px teal; /* Adding border to all sides */
-  border-top: none; /* Remove top border from here */
-  padding: 10px;
-}
-
-/* Adding border to the top */
-details[open] > summary {
   border: solid 1px teal;
-  border-bottom: none; /* Remove bottom border */
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top: none; /* Avoid double border at the top */
+  padding: 10px;
 }
 
 /* Style for the last child inside open details */
@@ -47,19 +41,19 @@ details[open] > :last-child {
 details > summary::before {
   content: "";
   display: inline-block;
-  width: 0.2rem;
-  height: 0.2rem;
+  width: 0.4rem;
+  height: 0.4rem;
   border: solid 2px black;
   border-left-color: transparent;
   border-top-color: transparent;
   margin-right: 0.6rem;
   transition: transform 0.2s;
-  transform: rotate(-45deg) translate(-20%, 20%); /* Default pointing right */
+  transform: rotate(45deg); /* Default pointing right */
 }
 
 /* Rotate arrow icon when details are open */
 details[open] > summary::before {
-  transform: rotate(90deg) translate(-20%, 20%); /* Pointing down when open */
+  transform: rotate(135deg); /* Pointing down when open */
 }
 
 /* Layout settings for the accordion section */
@@ -72,6 +66,15 @@ section.accordion {
 /* Remove padding from details element */
 details {
   padding: 0;
+  border: none; /* Remove border from details */
+}
+
+/* Border and padding for open summary */
+details[open] > summary {
+  border: solid 1px teal;
+  border-bottom: none; /* Avoid double border at the bottom */
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
 }
 
 /* Full width and padding for child elements */
