@@ -55,15 +55,15 @@ details[open] > div {
   display: block;
 }
 
-Layout settings for the accordion section */
-/*section.accordion {
+/*Layout settings for the accordion section */
+section.accordion {
   max-width: 120px;
   width: 100%;
   padding: 10px;
 }
 
-Remove padding from details element */
-/*details {
+/*Remove padding from details element */
+details {
   padding: 0;
 }
 
