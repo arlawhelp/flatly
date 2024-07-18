@@ -22,20 +22,6 @@ details[open] > summary {
   border-bottom-right-radius: 0;
 }
 
-/* Style for content inside open details */
-details[open] > :not(summary) {
-  border-left: solid 1px teal;
-  border-right: solid 1px teal;
-  padding: 10px;
-}
-
-/* Style for the last child inside open details */
-details[open] > :last-child {
-  border-bottom: solid 1px teal;
-  border-bottom-left-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
-}
-
 /* Arrow icon before summary text */
 details > summary::before {
   content: "";
@@ -47,12 +33,26 @@ details > summary::before {
   border-bottom-color: transparent;
   margin-right: 0.6rem;
   transition: transform 0.2s;
-  transform: translate(-20%, 20%);
+  transform: rotate(-45deg) translate(-20%, 20%); /* Default pointing right */
 }
 
 /* Rotate arrow icon when details are open */
 details[open] > summary::before {
-  transform: rotate(90deg) translate(-20%, 20%);
+  transform: rotate(-90deg) translate(-20%, 20%); /* Pointing down when open */
+}
+
+/* Style for the hidden content inside details */
+details > div {
+  border: solid 1px teal;
+  border-radius: 0.2rem;
+  padding: 10px;
+  display: none;
+  margin-top: 10px; /* Add a bit of margin to separate from the summary */
+}
+
+/* Show hidden content when details is open */
+details[open] > div {
+  display: block;
 }
 
 /* Layout settings for the accordion section */
