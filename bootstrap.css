@@ -35,5 +35,44 @@ details[open] > div {
   display: block;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
 
+.tooltip a {
+    text-decoration: underline;
+    color: blue;
+}
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Adjust this value if needed */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
+}
+
+.tooltip .tooltiptext:target {
+    visibility: visible;
+    opacity: 1; /* Make it visible and opaque */
+}
+
+.tooltip .tooltiptext .close-tooltip {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
