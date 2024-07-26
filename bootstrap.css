@@ -31,9 +31,8 @@ details[open] > summary::before {
 details > div {
   border: solid 2px lightblue;
   border-radius: 0.2rem;
-  padding: 0 30px; /* Remove padding above and below, add padding left and right */
-  display: none;
-  margin-top: 10px;
+  padding: 0 30px; /* padding left and right */
+  display: none; /* took this out from underneath this line because it didn't seem to do anything  margin-top: 10px; */
   margin-left: 20px; /* Add a bit of margin to separate from the summary */
   background-color: #e0f7ff; /* Lighter version of lightblue for background fill */
 }
@@ -45,9 +44,8 @@ details[open] > div {
 
 /* Layout settings for the accordion section */
 section.accordion {
-  max-width: 400px;
+  max-width: 700px;
   width: 100%;
-  padding: 10px;
 }
 
 .tooltip {
