@@ -76,10 +76,12 @@ section.accordion {
 
     .custom-popover {
       visibility: hidden;
-      width: 200px;
+      max-width: 276px; /* Match the default max-width */
       background-color: #f0fff0; /* Very light green background */
       color: green; /* Text color to match the green */
-      text-align: center;
+      text-align: left; /* Match the default text alignment */
+      font-family: "Lato", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Match the default font family */
+      font-size: 0.875rem; /* Match the default font size */
       border-radius: 6px;
       padding: 10px;
       position: absolute;
