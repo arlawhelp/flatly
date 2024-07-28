@@ -7,10 +7,10 @@
 
 /* Style for summary to center the text vertically */
 details > summary {
-  display: flex !important;
-  align-items: center !important;
-  padding: 10px !important;
-  cursor: pointer !important;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
 }
 
 /* Remove default marker for details */
@@ -36,18 +36,19 @@ details[open] > summary::before {
 
 /* Style for the hidden content inside details */
 details > div {
+  display: flex;
+  align-items: center; /* Center the text vertically */
   border: solid 2px lightblue;
   border-radius: 0.2rem;
   padding: 10px 30px; /* padding left and right */
   margin-top: 10px; /* Add margin to separate from the summary */
   margin-left: 20px; /* Add a bit of margin to separate from the summary */
   background-color: #e0f7ff; /* Lighter version of lightblue for background fill */
-  display: none;
 }
 
 /* Show hidden content when details is open */
 details[open] > div {
-  display: block;
+  display: flex;
 }
 
 /* Layout settings for the accordion section */
