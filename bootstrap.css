@@ -76,7 +76,7 @@ section.accordion {
 
     .custom-popover {
       visibility: hidden;
-      max-width: 276px; /* Match the default max-width */
+      width: 200px;
       background-color: #f0fff0; /* Very light green background */
       color: green; /* Text color to match the green */
       text-align: left; /* Match the default text alignment */
