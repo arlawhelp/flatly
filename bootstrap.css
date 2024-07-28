@@ -48,44 +48,47 @@ section.accordion {
   width: 100%;
 }
 
-.tooltip {
+.popover-container {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    text-decoration: none; /* Remove the default underline */
+    color: green; /* Change the text color to green */
+    border-bottom: 2px dotted green; /* Add a dotted underline */
 }
 
-.tooltip a {
-    text-decoration: underline;
-    color: blue;
-}
-
-.tooltip .tooltiptext {
+.popover {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
+    width: 200px;
+    background-color: #f0fff0; /* Very light green background */
+    color: green; /* Text color to match the green */
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 10px;
     position: absolute;
     z-index: 1;
     bottom: 125%; /* Adjust this value if needed */
     left: 50%;
-    margin-left: -60px;
+    transform: translateX(-50%);
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
+    border: 1px solid green; /* Border color to match the green */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
 }
 
-.tooltip .tooltiptext:target {
+.popover::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f0fff0 transparent transparent transparent; /* Arrow color to match the background */
+}
+
+.popover-container:hover .popover,
+.popover-container:focus-within .popover {
     visibility: visible;
     opacity: 1; /* Make it visible and opaque */
-}
-
-.tooltip .tooltiptext .close-tooltip {
-    position: absolute;
-    top: 0;
-    right: 5px;
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
 }
