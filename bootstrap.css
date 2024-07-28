@@ -48,6 +48,7 @@ section.accordion {
   width: 100%;
 }
 
+/* Popover styles */
 .popover-container {
     position: relative;
     display: inline-block;
@@ -67,9 +68,9 @@ section.accordion {
     padding: 10px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Adjust this value if needed */
+    top: -10px; /* Adjusted to position above */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -100%); /* Center horizontally and position above the trigger */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
     border: 1px solid green; /* Border color to match the green */
@@ -79,7 +80,7 @@ section.accordion {
 .popover::before {
     content: '';
     position: absolute;
-    top: 100%;
+    bottom: -10px; /* Adjusted to be below the popover */
     left: 50%;
     transform: translateX(-50%);
     border-width: 5px;
