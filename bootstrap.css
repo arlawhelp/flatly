@@ -65,47 +65,47 @@ section.accordion {
 }
 
 /* Popover styles */
-.popover-container {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none; /* Remove the default underline */
-    color: green; /* Change the text color to green */
-    border-bottom: 3px dotted green; /* Add a dotted underline */
-}
+    .custom-popover-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none; /* Remove the default underline */
+      color: green; /* Change the text color to green */
+      border-bottom: 3px dotted green; /* Add a dotted underline */
+    }
 
-.popover {
-    visibility: hidden;
-    width: 200px;
-    background-color: #f0fff0; /* Very light green background */
-    color: green; /* Text color to match the green */
-    text-align: center;
-    border-radius: 6px;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    top: -10px; /* Adjusted to position above */
-    left: 50%;
-    transform: translate(-50%, -100%); /* Center horizontally and position above the trigger */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
-    border: 1px solid green; /* Border color to match the green */
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-}
+    .custom-popover {
+      visibility: hidden;
+      width: 200px;
+      background-color: #f0fff0; /* Very light green background */
+      color: green; /* Text color to match the green */
+      text-align: center;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: -10px; /* Adjusted to position above */
+      left: 50%;
+      transform: translate(-50%, -100%); /* Center horizontally and position above the trigger */
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
+      border: 1px solid green; /* Border color to match the green */
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    }
 
-.popover::before {
-    content: '';
-    position: absolute;
-    bottom: -10px; /* Adjusted to be below the popover */
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 5px;
-    border-style: solid;
-    border-color: #f0fff0 transparent transparent transparent; /* Arrow color to match the background */
-}
+    .custom-popover::before {
+      content: '';
+      position: absolute;
+      bottom: -10px; /* Adjusted to be below the popover */
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: #f0fff0 transparent transparent transparent; /* Arrow color to match the background */
+    }
 
-.popover-container:hover .popover,
-.popover-container:focus-within .popover {
-    visibility: visible;
-    opacity: 1; /* Make it visible and opaque */
-}
+    .custom-popover-container:hover .custom-popover,
+    .custom-popover-container:focus-within .custom-popover {
+      visibility: visible;
+      opacity: 1; /* Make it visible and opaque */
+    }
