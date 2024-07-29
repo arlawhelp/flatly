@@ -46,7 +46,7 @@ details > div {
   border-radius: 0.2rem;
   padding: 1rem 1rem; /* Add 3% padding to all sides, used to be 20% but on mobile it took up too much space, also deleted this from the next line   margin-top: 10px; */
   margin-bottom: 20px; /* Add a bit of margin to separate from the next line below the accordion */
-  background-color: #e0d5f9; /* Lighter version of the purple */
+  background-color: #ebe4fb; /* Lighter version of the purple */
 }
 
 /* Show hidden content when details is open */
