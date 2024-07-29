@@ -11,6 +11,9 @@ details > summary {
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  color: #7428f2; /* Make the text the same color as the marker */
+  font-weight: bold; /* Make the text bold */
+
 }
 
 /* Remove default marker for details */
@@ -21,7 +24,7 @@ details > summary::-webkit-details-marker {
 /* Custom marker */
 details > summary::before {
   content: "\25B6\FE0E"; /* Unicode for the right-pointing triangle */
-  color: lightblue;
+  color: #7428f2;
   display: inline-block;
   width: 1em;
   margin-right: 0.5em;
@@ -39,12 +42,11 @@ details[open] > summary::before {
 details > div {
   display: block;
   align-items: center; /* Center the text vertically */
-  border: solid 2px lightblue;
+  border: solid 1px #7428f2;
   border-radius: 0.2rem;
   padding: 1rem 1rem; /* Add 3% padding to all sides, used to be 20% but on mobile it took up too much space, also deleted this from the next line   margin-top: 10px; */
-  margin-bottom: 20px; /* Add a bit of margin to separate from the next line below the acordion */
-
-  background-color: #e0f7ff; /* Lighter version of lightblue for background fill */
+  margin-bottom: 20px; /* Add a bit of margin to separate from the next line below the accordion */
+  background-color: #e0d5f9; /* Lighter version of the purple */
 }
 
 /* Show hidden content when details is open */
