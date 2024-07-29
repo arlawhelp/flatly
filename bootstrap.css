@@ -20,7 +20,7 @@ details > summary::-webkit-details-marker {
 
 /* Custom marker */
 details > summary::before {
-  content: "\25B6"; /* Unicode for the right-pointing triangle */
+  content: "\25B6\FE0E"; /* Unicode for the right-pointing triangle */
   color: lightblue;
   display: inline-block;
   width: 1em;
