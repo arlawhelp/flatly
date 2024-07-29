@@ -20,13 +20,14 @@ details > summary::-webkit-details-marker {
 
 /* Custom marker */
 details > summary::before {
-  content: "▶";
+  content: "\25B6"; /* Unicode for the right-pointing triangle */
   color: lightblue;
   display: inline-block;
   width: 1em;
   margin-right: 0.5em;
   transform: rotate(0deg);
   transition: transform 0.2s;
+  font-family: sans-serif; /* Use a font family that doesn't substitute with emojis */
 }
 
 /* Rotate custom marker when details is open */
