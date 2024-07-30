@@ -1,3 +1,7 @@
+#hslNav{
+display: none !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
